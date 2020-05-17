@@ -1,0 +1,29 @@
+---
+title: Post de Exemplo
+date: 2020-05-17
+---
+
+Olá esse é meu post de exemplo.
+
+```js:title=gatsby-config.js
+module.exports = {
+  plugins: [
+    "gatsby-theme-blog", // highlight-line
+    "gatsby-theme-notes",
+  ],
+}
+```
+
+Isso aqui abaixo é só um texto para "encher linguiça" mesmo.
+
+## This is a secondary heading
+
+```jsx
+import React from "react"
+import { ThemeProvider } from "theme-ui"
+import theme from "./theme"
+
+export default props => (
+  <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
+)
+```
